@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 35, 100);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    background: transparent;
+}
+header .left-container {
+    display: flex;
+    align-items: center;
+}
+header .left-container .logo{
+    margin: 10px 20px;
+    font-family: "Playfair Display", serif;
+}
+header .left-container .menu {
+    display: flex;
+    margin-left: 20px;
+    font-size: 10px;
+    gap: 20px;
+}
+header .right-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap:10px;
+    font-size: 60%;
+    color: rgb(0, 35, 100);
+}
