@@ -13,20 +13,33 @@ header{
     height: 35px;
     background: transparent;
 }
+/* left-container */
 header .left-container {
     display: flex;
     align-items: center;
 }
+/* logo */
 header .left-container .logo{
-    margin: 10px 20px;
+    margin: 20px;
     font-family: "Playfair Display", serif;
 }
+/* menu */
 header .left-container .menu {
-    display: flex;
-    margin-left: 20px;
-    font-size: 10px;
-    gap: 20px;
+    margin-left: 10px;   
 }
+header .left-container .main-menu{
+    display: flex;
+    font-size: 10px;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+header .left-container .main-menu .item-menu .submenu{
+    display: none;
+}
+/* item-menu */
+
+/* right-container */
 header .right-container {
     display: flex;
     align-items: center;
