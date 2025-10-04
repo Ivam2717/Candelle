@@ -9,9 +9,12 @@ a{
 }
 header{
     display: flex;
-    justify-content: space-between;
+    position: fixed;
+    width: 100%;
     height: 35px;
+    justify-content: space-between;
     background: transparent;
+    
 }
 /* left-container */
 header .left-container {
@@ -34,11 +37,26 @@ header .left-container .main-menu{
     gap: 20px;
     padding: 0;
 }
+/* item-menu */
 header .left-container .main-menu .item-menu .submenu{
     display: none;
 }
-/* item-menu */
-
+header .left-container .main-menu .item-menu:hover .submenu{
+    display: block;
+    position: fixed;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 1000;
+    line-height: 15px;
+}
+header .left-container .main-menu .item-menu:hover .submenu a{
+    display: block;
+}
 /* right-container */
 header .right-container {
     display: flex;
